@@ -1,13 +1,16 @@
+import React from 'react';
+//imports libs
 import {Text, View} from 'native-base';
 import {NativeBaseProvider} from 'native-base';
-import React from 'react';
+//self imports
+import { Login } from './src/screens/Login/Login';
+
+
 
 const App = () => {
   return (
     <NativeBaseProvider>
-      <View>
-        <Text className='text-red-600'> Hello World </Text>
-      </View>
+      <Login />
     </NativeBaseProvider>
   );
 };
